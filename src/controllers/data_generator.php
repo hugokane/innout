@@ -25,6 +25,12 @@ $lazyDayTemplate = [
 
 
 $value = rand(0, 100);
-
+if($value <= $regularRate) {
+    return $regularDayTemplate;
+} elseif ($value <= $regularRate + $extraRate) {
+    return $extraHourDayTemplate;
+}else {
+    return $lazyDayTemplate;
+}
     
 }
