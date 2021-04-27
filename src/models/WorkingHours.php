@@ -46,4 +46,8 @@ class WorkingHours extends Model {
             $this->insert();
         }
     }
+
+    function getTimes() {
+        $times = [];
+    }
 }
