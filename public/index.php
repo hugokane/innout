@@ -1,4 +1,7 @@
+
 <?php
+ ini_set('display_errors', 0 );
+ ini_set('default_charset','UTF-8');
 require_once(dirname(__FILE__, 2) . '/src/config/config.php');
 
 $uri = urldecode(
